@@ -1,0 +1,64 @@
+{
+  "name": "dsh-money-board",
+  "version": "1.0.0",
+  "description": "Session cost board for DeepSeek Harness: turns save-token counters into money with the official price table, showing spend, compression savings and the peak/off-peak delta above the composer.",
+  "type": "module",
+  "license": "MIT",
+  "author": "YG",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "cordis",
+    "token",
+    "cost",
+    "pricing",
+    "billing",
+    "peak-offpeak"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "icons/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github798383392/dsh-money-board.git"
+  },
+  "homepage": "https://github.com/github798383392/dsh-money-board",
+  "bugs": {
+    "url": "https://github.com/github798383392/dsh-money-board/issues"
+  }
+}

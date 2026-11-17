@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Money board",
+    "description": "Turns the save-token token counters into money with dsh-cost-meter's official price table: session spend, compression savings, and the peak/off-peak delta, shown right above the composer.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,6 @@
+- insert:
+    - id: money-board
+      name: dsh-money-board
+      config:
+        currency: CNY
+        model: auto

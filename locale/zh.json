@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "省钱看板",
+    "description": "把 save-token 的 token 统计按 dsh-cost-meter 的官方价表折成钱：本会话花了多少、压缩省了多少、错峰还能省多少，直接显示在输入框上方。",
+    "detail": "docs/DETAIL.md"
+  }
+}
